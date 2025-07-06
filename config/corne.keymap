@@ -19,10 +19,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &studio_unlock &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+   &kp TAB &kp SINGLE_QUOTE &kp LESS_THAN &kp GREATER_THAN &kp P &kp Y   &kp F &kp G  &kp C     &kp R   &kp L    &kp SLASH
+   &kp LSHIFT &kp A &kp O &kp E &kp U &kp I   &kp D &kp H  &kp T     &kp N   &kp S &kp MINUS
+   &kp LCTRL &kp SEMI &kp Q &kp J &kp K &kp X   &kp B &kp M  &kp W &kp V &kp Z &kp EQUAL
+                  &kp LCMD &mo 1 &mo 2   &kp ENTER &kp SPACE &kp LEFT_ALT
                         >;
                 };
                 lower_layer {
@@ -32,10 +32,10 @@
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp ESC    &none        &kp N1       &kp N2       &kp N3       &none         &kp BACKSPACE   &kp HOME   &kp UP &kp END    &none &none
+   &trans &none 0 &kp N4 &kp N5 &kp N6 &kp N0   &kp DELETE &kp LEFT &kp DOWN &kp RIGHT &none &none
+   &trans  &none       &kp N7       &kp N8       &kp N9      &none         &kp CAPS   &kp PAGE_UP   &kp PAGE_DOWN &none    &none &none
+                                    &trans     &trans       &mo 3      &trans  &trans   &trans
                         >;
                 };
 
@@ -52,5 +52,10 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+                // extra_layer {
+                //         bindings = <
+                        
+                //         >;
+                // };
         };
 };
