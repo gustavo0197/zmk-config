@@ -33,7 +33,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp ESC    &none        &kp N1       &kp N2       &kp N3       &none         &kp BACKSPACE   &kp HOME   &kp UP &kp END    &none &none
-   &trans &none 0 &kp N4 &kp N5 &kp N6 &kp N0   &kp DELETE &kp LEFT &kp DOWN &kp RIGHT &none &none
+   &trans &none &kp N4 &kp N5 &kp N6 &kp N0   &kp DELETE &kp LEFT &kp DOWN &kp RIGHT &none &none
    &trans  &none       &kp N7       &kp N8       &kp N9      &none         &kp CAPS   &kp PAGE_UP   &kp PAGE_DOWN &none    &none &none
                                     &trans     &trans       &mo 3      &trans  &trans   &trans
                         >;
